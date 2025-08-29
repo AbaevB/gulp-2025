@@ -1,0 +1,505 @@
+@media only screen and (max-width : 1280px) {
+  .container {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  .header {
+    padding-top: 27px;
+    padding-bottom: 22px;
+
+    &__logo {
+      width: 166px;
+    }
+
+    &__right {
+      max-width: 10%;
+    }
+
+    &__nav {
+      padding-bottom: 3px;
+    }
+
+  }
+
+  .nav {
+    &__item:not(:last-child) {
+      margin-right: 27px;
+    }
+  }
+
+  /*-----masterclass-----*/
+
+  .masterclass {
+    padding-top: 33px;
+    padding-bottom: 70px;
+
+    &__block {
+      max-height: 623px;
+    }
+
+    &__banner {
+      padding: 30px;
+      background-image: url("../img/masterclasss-bg-1280.webp");
+    }
+
+    &__title {
+      font-size: 34px;
+      line-height: 37px;
+    }
+
+    &__banner-content {
+      max-width: 100%;
+    }
+
+
+    &__grid {
+      grid-template-rows: 332px 186px;
+    }
+
+  }
+
+  .about {
+    padding-bottom: 82px;
+
+  }
+
+  .about__block-top {
+    margin-bottom: 22px;
+  }
+
+  .subscribe-form {
+    gap: 0;
+
+
+
+    &__fieldset {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__input-container  {
+      width: 73.3%;
+    }
+  }
+
+}
+
+
+
+
+
+@media only screen and (max-width : 1024px) {}
+
+
+
+@media only screen and (max-width : 992px) {
+  .container {
+    padding-right: 27px;
+    padding-left: 27px;
+
+  }
+
+  .header {
+    padding-bottom: 0;
+
+    &__container {
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    &__left {
+      max-width: 357px;
+      padding-bottom: 22px;
+      order: 1;
+      margin-right: auto;
+    }
+
+    &__left-inner {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding-left: 27px;
+    }
+
+    &__right {
+      max-width: 357px;
+      padding-bottom: 28px;
+      order: 2;
+    }
+
+    &__right-inner {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      width: 100%;
+      padding-right: 27px;
+    }
+
+    &__btn {
+      margin-left: auto;
+    }
+
+    &__center {
+      display: block;
+      width: 100%;
+      order: 3;
+      padding-top: 12px;
+      padding-bottom: 9px;
+      background-color: $subscribeColor;
+    }
+
+    &__center-inner {
+      display: flex;
+      align-items: center;
+      padding-right: 27px;
+      padding-left: 27px;
+    }
+
+    &__nav {
+      width: 100%;
+
+    }
+
+
+
+  }
+
+  .nav {
+    &__list {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: auto;
+    }
+
+    &__link {
+      padding: 0;
+    }
+
+  }
+
+
+  /*----masterclass----*/
+
+  .masterclass {
+    padding-top: 36px;
+    padding-bottom: 68px;
+
+    &__block {
+      max-height: 452px;
+    }
+
+    &__banner {
+      background-image: url("../img/masterclasss-bg-992.webp");
+    }
+
+    &__span {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      line-height: 31px;
+    }
+
+    &__subtitle {
+      margin-bottom: 17px;
+      font-size: 22px;
+      line-height: 23px;
+    }
+
+    &__grid {
+      grid-template-rows: 228px 133px;
+    }
+
+  }
+
+  .about {
+    padding-bottom: 62px;
+    &__block_right  {
+      gap: 0;
+    }
+    &__block-top  {
+      margin: 0;
+
+    }
+
+    &__image{
+      max-height: 569px;
+    }
+  }
+
+  .subscribe-form {
+
+    &__input-container  {
+      width: 100%;
+    }
+
+  }
+
+}
+
+
+
+
+@media only screen and (max-width : 768px) {}
+
+
+
+
+@media only screen and (max-width : 590px
+  /*480px*/
+) {
+  .container {
+    padding-right: 21px;
+    padding-left: 21px;
+
+  }
+
+  .header {
+    position: relative;
+    padding-top: 26px;
+
+    &__container {
+      padding: 0;
+    }
+
+    &__left {
+      padding-bottom: 21px;
+    }
+
+    &__right {
+      padding-bottom: 21px;
+    }
+
+    &__btn {
+      width: 20px;
+      height: 20px;
+
+    }
+
+    &__left-inner {
+      padding-left: 21px;
+    }
+
+    &__right-inner {
+      padding-right: 21px;
+    }
+
+    &__logo {
+      width: 112px;
+    }
+
+    &__center {
+      padding-top: 14px;
+      padding-bottom: 13px;
+    }
+
+    &__center-inner {
+      padding-right: 21px;
+      padding-left: 21px;
+    }
+
+    &__nav {
+      /*display: none;*/
+      position: fixed;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      z-index: z(burger-menu);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+
+
+    &__burger {
+      display: block;
+      z-index: z(burger);
+    }
+  }
+
+  .nav {
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding-top: 14px;
+    padding-bottom: 36px;
+    padding-right: 21px;
+    padding-left: 21px;
+    background-color: $subscribeColor;
+
+    &__list {
+      flex-direction: column;
+      position: relative;
+      left: -100;
+      width: 100%;
+    }
+
+    &__item:not(:last-child):not(:first-child) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &__item_hidden {
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    &__phone {
+      display: block;
+      width: 100%;
+      justify-content: start;
+      align-items: start;
+    }
+
+
+
+  }
+
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-form {
+    width: 278px;
+
+    &__input {
+      width: 230px;
+    }
+  }
+
+  /*----masterclass----*/
+
+  .masterclass {
+    padding-top: 30px;
+    padding-bottom: 3px;
+
+    &__container {
+      flex-direction: column;
+      gap: 34px;
+    }
+
+    &__block {
+      width: 100%;
+      max-height: none;
+      height: 422px;
+    }
+
+    &__banner {
+      background-image: url("../img/masterclasss-bg-480.webp");
+    }
+
+    &__tag {
+      top: 6px;
+      right: 5px;
+    }
+
+    &__span {
+      margin-bottom: 1px;
+      font-size: 14px;
+    }
+
+
+    &__title {
+      font-size: 24px;
+      line-height: 26px;
+    }
+
+    &__subtitle {
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 19px;
+
+    }
+
+    &__grid {
+      grid-template-rows: 186px 105px;
+    }
+
+  }
+
+  .tag {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 7px;
+    padding-left: 7px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .btn-default {
+    font-size: 14px;
+    line-height: 34px;
+
+  }
+
+  .section__title {
+    font-size: 18px;
+  }
+
+  .about {
+    padding-top: 28px;
+
+    &__title  {
+      line-height: 32px;
+    }
+
+    &__inner {
+      flex-direction: column;
+      gap: 19px;
+    }
+
+    &__block {
+      width: 100%;
+    }
+
+    &__block_left{
+      padding: 0;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__block-top  {
+      margin-bottom: 22px;
+    }
+  }
+
+  .subscribe-form {
+    &__legend{
+      margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 22px;
+    }
+
+
+
+    &__input  {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      height: 40px;
+      &::placeholder{
+        font-size: 14px;
+        line-height: 16;
+      }
+    }
+
+    &__btn  {
+     max-width: 115px;
+    }
+  }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width : 320px) {}
