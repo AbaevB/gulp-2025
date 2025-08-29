@@ -1,0 +1,49 @@
+.header {
+  padding: 60px 0;
+
+  &__inner  {
+    display: flex;
+  }
+
+  &__nav  {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-list {
+    @include  listReset;
+    display: flex;
+    gap: 15px;
+  }
+
+
+  &__logo {
+    @include fontPul2;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 700;
+    color: aliceblue;
+    background-color: navy;
+  }
+
+  &__logo-text  {
+    display: inline;
+  }
+
+  &__logo-span  {
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+  }
+
+
+
+  &__logo-trade {
+    display: inline;
+    font-size: 10px;
+  }
+}
